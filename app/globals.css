@@ -1,26 +1,80 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --gray-50: oklch(0.98 0.0034 247.86);
+  --gray-100: oklch(0.97 0.0062 255.48);
+  --gray-200: oklch(0.93 0.0109 256.7);
+  --gray-300: oklch(0.87 0.0175 256.29);
+  --gray-400: oklch(0.71 0.0309 259.58);
+  --gray-500: oklch(0.56 0.0363 259.98);
+  --gray-600: oklch(0.45 0.0328 260.23);
+  --gray-700: oklch(0.31 0.0294 262.82);
+  --gray-800: oklch(0.28 0.034 262.78);
+  --gray-900: oklch(0.21 0.037 269.04);
+
+  --blue-50: oklch(0.99 0.007 268.55);
+  --blue-100: oklch(0.96 0.017 267.79);
+  --blue-200: oklch(0.92 0.0344 267.64);
+  --blue-300: oklch(0.86 0.0632 267.22);
+  --blue-400: oklch(0.78 0.0997 266.42);
+  --blue-500: oklch(0.62 0.1853 264.36);
+  --blue-600: oklch(0.54 0.1591 264.58);
+  --blue-700: oklch(0.46 0.1335 264.65);
+  --blue-800: oklch(0.38 0.105 264.65);
+  --blue-900: oklch(0.29 0.0746 264.53);
+
+  --base-100: oklch(0.99 0 0);
+  --base-200: oklch(0.97 0 0);
+  --base-300: oklch(0.95 0 0);
+  --base-400: oklch(0.9 0 0);
+  --base-500: oklch(0.85 0 0);
+  --base-600: oklch(0.74 0 0);
+  --base-700: oklch(0.51 0 0);
+  --base-800: oklch(0.32 0 0);
+  --base-900: oklch(0 0 0);
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-gray-50: var(--gray-50);
+  --color-gray-100: var(--gray-100);
+  --color-gray-200: var(--gray-200);
+  --color-gray-300: var(--gray-300);
+  --color-gray-400: var(--gray-400);
+  --color-gray-500: var(--gray-500);
+  --color-gray-600: var(--gray-600);
+  --color-gray-700: var(--gray-700);
+  --color-gray-800: var(--gray-800);
+  --color-gray-900: var(--gray-900);
+
+  --color-blue-50: var(--blue-50);
+  --color-blue-100: var(--blue-100);
+  --color-blue-200: var(--blue-200);
+  --color-blue-300: var(--blue-300);
+  --color-blue-400: var(--blue-400);
+  --color-blue-500: var(--blue-500);
+  --color-blue-600: var(--blue-600);
+  --color-blue-700: var(--blue-700);
+  --color-blue-800: var(--blue-800);
+  --color-blue-900: var(--blue-900);
+
+  --color-base-100: var(--base-100);
+  --color-base-200: var(--base-200);
+  --color-base-300: var(--base-300);
+  --color-base-400: var(--base-400);
+  --color-base-500: var(--base-500);
+  --color-base-600: var(--base-600);
+  --color-base-700: var(--base-700);
+  --color-base-800: var(--base-800);
+  --color-base-900: var(--base-900);
+
+  --font-satoshi: "Satoshi", sans-serif;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+@font-face {
+  font-family: "Satoshi";
+  src: url("/fonts/Satoshi-Black.woff2") format("woff2");
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-satoshi);
 }
