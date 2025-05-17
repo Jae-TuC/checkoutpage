@@ -1,11 +1,11 @@
 import Navbar from "@/components/navbar";
-import OrderSummary from "@/components/orders-summary";
+import Orders from "@/components/orders";
 
 export default function Home() {
   return (
     <>
       <Navbar />
-      <OrderSummary />
+      <Orders />
     </>
   );
 }

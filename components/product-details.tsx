@@ -23,10 +23,12 @@ const ProductDetails = ({ className }: ProductDetailsProps) => {
       {/* Product details */}
       <div className="flex-1 flex flex-col gap-1">
         <div className="flex items-center justify-between">
-          <p className="text-gray-900 font-bold text-sm/normal">
+          <p className="text-gray-900 font-bold text-sm/normal lg:text-base/normal">
             Nike Air Zoom Premium
           </p>
-          <p className="text-gray-900 font-medium text-sm/normal">$20.00</p>
+          <p className="text-gray-900 font-medium text-sm/normal lg:text-base/normal">
+            $20.00
+          </p>
         </div>
         <div className="flex items-center gap-2">
           <p className="text-gray-500 font-medium text-sm/normal">
